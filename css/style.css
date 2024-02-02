@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.link-btn a {
+  display: inline-block;
+  background-color: #bcec00;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+/* ----------------------- */
+@media only screen and (max-width: 576px) {
+  body .quality-section .item .number {
+    top: -45px;
+    left: 0px;
+}
+}
+/* ----------------------- */
+header {
+  background-color: black;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999999;
+  color: aliceblue;
+  padding: 20px 0px;
+}
+.main-menu .logo a {
+  font-size: 30px;
+}
+.main-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+.main-menu a {
+  color: aliceblue;
+}
+.contact-btn a {
+  color: black;
+}
+.contact-btn {
+  background-color: #bcec00;
+  padding: 8px 30px;
+  border-radius: 30px;
+}
+/* --------hero-section start-------- */
+.hero-section {
+  padding-top: 150px;
+  color: aliceblue;
+  min-height: 615px;
+  background-image: url(../images/Banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.hero-section h1 {
+  font-size: 70px;
+}
+.hero-section .link-btn {
+  position: relative;
+}
+.hero-section .link-btn .icon {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  right: -300px;
+}
+.hero-section small {
+  color: #908e8e;
+  font-size: 12px;
+}
+/* --------hero-section end-------- */
+/* -------- about-section start-------- */
+.about-section {
+  padding: 50px 0px;
+  min-height: 400px;
+}
+.about-section h4 {
+  font-size: 18px;
+  color: #3c50e0;
+}
+.about-section h1 {
+  font-size: 48px;
+  color: #00005c;
+}
+.about-section p {
+  font-size: 18px;
+  color: #627193;
+}
+/* -------- about-section end-------- */
+
+/* -------- review-section start-------- */
+.review-section {
+  padding: 80px 0px 50px 0px;
+  min-height: 400px;
+  background-color: #f9f9fb;
+}
+.review-section .image {
+  position: relative;
+}
+.review-section .counterup {
+  font-size: 48px;
+  color: #000000;
+}
+.review-section span {
+  font-size: 48px;
+  color: #705cf6;
+}
+.review-section p {
+  font-size: 20px;
+  color: #627193;
+}
+.review-section h1 span {
+  color: #705cf6;
+}
+.project-review {
+  position: relative;
+  margin-top: 50px;
+}
+.project-review .bg-img img {
+  position: absolute;
+  top: -130px;
+  left: -130px;
+  width: 300px;
+}
+/* -------- review-section end-------- */
+
+/* --------service-section start-------- */
+.service-section {
+  padding: 50px 0px;
+  min-height: 400px;
+}
+.service-section h1 {
+  font-size: 48px;
+  color: #00005c;
+}
+.service-section p {
+  font-size: 20px;
+  color: #627193;
+}
+.service-section .box p {
+  font-size: 16px;
+}
+.service-section .box {
+  margin: 20px 0px;
+  padding: 20px;
+  min-height: 300px;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+}
+.service-section .box img {
+  width: 80px;
+}
+/* -------- review-section end-------- */
+
+/* -------- start-------- */
+.quality-section {
+  padding: 50px 0px;
+  min-height: 500px;
+  background-image: url(../images/handp.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.quality-section h1 {
+  font-size: 48px;
+}
+.quality-section p {
+  font-size: 20px;
+  color: #c7c7c7;
+}
+.quality-section .item {
+  position: relative;
+  padding-left: 30px;
+  margin: 30px 0px;
+  border-left: 1px solid #715cf64a;
+}
+.quality-section .item .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 20px;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  color: #00005c;
+  font-weight: bold;
+  background-color: #bcec00;
+  border-radius: 15px;
+}
+.quality-section .item h4 {
+  font-size: 20px;
+  color: #ffffff;
+}
+.quality-section .item p {
+  font-size: 16px;
+  color: #b9b9b9;
+}
+/* -------- end-------- */
+
+/* -------- start-------- */
+.build-section {
+  padding: 50px 0px;
+  min-height: 400px;
+}
+.build-section h4 {
+  font-size: 18px;
+  color: #3c50e0;
+}
+.build-section h1 {
+  font-size: 48px;
+  color: #00005c;
+}
+.build-section p {
+  font-size: 18px;
+  color: #627193;
+}
+/* -------- end-------- */
+/* -------- start-------- */
+/* -------- end-------- */
+/* -------- start-------- */
+/* -------- end-------- */
+/* -------- start-------- */
+/* -------- end-------- */
+/* -------- start-------- */
+/* -------- end-------- */
+/* -------- start-------- */
+/* -------- end-------- */
