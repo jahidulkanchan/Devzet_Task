@@ -19,6 +19,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+button {
+  outline: none;
+}
 .link-btn a {
   display: inline-block;
   background-color: #bcec00;
@@ -48,7 +51,8 @@ ul {
   body .review-section span {
     font-size: 38px;
   }
-  body footer a, body footer p{
+  body footer a,
+  body footer p {
     font-size: 16px;
   }
 }
@@ -420,6 +424,34 @@ header {
   font-weight: 700;
   color: #00005c;
 }
+.accordion {
+  outline: none !important;
+}
+.accordion-item {
+  margin: 25px 0px;
+}
+.accordion {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+.accordion-body {
+  border-radius: 0px 0px 10px 10px;
+}
+.accordion-button {
+  background-color: #ffffff;
+  border-radius: 15px !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  border: 1px solid gainsboro;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  outline: none;
+}
+.accordion-button:focus {
+  z-index: 3;
+}
 /* -------- end-------- */
 /* -------- platform-section start-------- */
 .platform-section {
@@ -439,7 +471,7 @@ header {
 /* -------- platform-section end-------- */
 
 /* -------- start-------- */
-footer{
+footer {
   padding: 50px 0px;
   min-height: 400px;
   background-image: url(../images/footer-bg.png);
@@ -447,17 +479,18 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
 }
-footer h4{
+footer h4 {
   color: #ffffff;
   margin: 20px 0px;
   font-size: 24px;
 }
-footer li{
+footer li {
   margin: 0px 0px;
 }
-footer a,footer p{
+footer a,
+footer p {
   font-size: 18px;
-  color: #7880AA;
+  color: #7880aa;
 }
 /* -------- end-------- */
 
@@ -475,5 +508,4 @@ footer a,footer p{
 
 /* -------- start-------- */
 /* -------- end-------- */
-/* 
 
