@@ -429,13 +429,16 @@ header {
 }
 .accordion-item {
   margin: 25px 0px;
+  background-color: #00000000 !important;
 }
 .accordion {
   border-radius: 20px !important;
   background-color: transparent !important;
 }
 .accordion-body {
-  border-radius: 0px 0px 10px 10px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 10px 10px !important;
+  border: 1px solid gray !important;
 }
 .accordion-button {
   background-color: #ffffff;
@@ -443,14 +446,11 @@ header {
 }
 .accordion-button:focus {
   box-shadow: none !important;
-  border: 1px solid gainsboro;
+  border: 1px solid rgba(220, 220, 220, 0);
 }
 .accordion-button:not(.collapsed) {
   background-color: #ffffff;
-  outline: none;
-}
-.accordion-button:focus {
-  z-index: 3;
+  border-radius: 15px 15px 0px 0px !important;
 }
 /* -------- end-------- */
 /* -------- platform-section start-------- */
@@ -508,4 +508,3 @@ footer p {
 
 /* -------- start-------- */
 /* -------- end-------- */
-
