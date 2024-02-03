@@ -167,7 +167,7 @@ header {
 }
 .project-review .bg-img img {
   position: absolute;
-  top: -130px;
+  top: -160px;
   left: -130px;
   width: 300px;
 }
@@ -509,8 +509,7 @@ footer .logo a {
   font-size: 28px;
 }
 footer .box input {
-  width: 280px;
-  max-width: 320px;
+  min-width: 280px;
   outline: none;
   border: none;
 }
