@@ -48,6 +48,9 @@ ul {
   body .review-section span {
     font-size: 38px;
   }
+  body footer a, body footer p{
+    font-size: 16px;
+  }
 }
 
 /* ----------------------- */
