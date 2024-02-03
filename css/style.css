@@ -420,44 +420,6 @@ header {
   font-weight: 700;
   color: #00005c;
 }
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.accordion-item {
-  border: 1px solid #ddd;
-  margin-bottom: 5px;
-  background-color: #00290e00;
-}
-.accordion-item-header {
-  position: relative;
-  padding: 10px;
-  cursor: pointer;
-  background-color: #ffffff;
-  border-radius: 15px 15px 0 0;
-}
-.accordion-item-header::after {
-  position: absolute;
-  content: "+";
-  font-size: 20px;
-  right: 30px;
-}
-.accordion-item-content {
-  overflow: hidden;
-  padding: 0px 10px;
-  height: 0px;
-  margin-top: 0px;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-  border-radius: 0 0 15px 15px;
-}
-
-.accordion-item-content.active {
-  height: 60px;
-  max-height: 200px;
-}
-
 /* -------- end-------- */
 /* -------- platform-section start-------- */
 .platform-section {
