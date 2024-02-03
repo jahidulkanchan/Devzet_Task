@@ -371,7 +371,41 @@ header {
 }
 /* -------- content-section end-------- */
 
-/* -------- start-------- */
+/* -------- blog-section start-------- */
+.blog-section {
+  padding: 50px 0px;
+  min-height: 500px;
+}
+.blog-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #00005c;
+  margin-bottom: 50px;
+}
+.blog-section .blog-item > span {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #b9b9b9;
+}
+.blog-section .blog-item p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 8px;
+  color: #000000;
+}
+.blog-section .profile img {
+  width: 35px;
+  margin-right: 10px;
+}
+.blog-section .profile span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+/* -------- blog-section end-------- */
+
+/* -------- platform-section start-------- */
 .platform-section {
   padding: 50px;
   min-height: 300px;
@@ -384,10 +418,10 @@ header {
   margin: 10px 0px;
 }
 .platform-section .icon img {
-  max-width: 150px;
+  max-width: 160px;
 }
-/* -------- end-------- */
-/* -------- start-------- */
-/* -------- end-------- */
+/* -------- platform-section end-------- */
+
+
 /* -------- start-------- */
 /* -------- end-------- */
