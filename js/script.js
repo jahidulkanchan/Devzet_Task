@@ -26,16 +26,3 @@ $(".slider1").owlCarousel({
     },
   },
 });
-
-// Accourdion items js
-
-function toggleAccordionItem(itemNumber) {
-  const items = document.querySelectorAll('.accordion-item-content');
-  items.forEach((item, index) => {
-    if (index + 1 === itemNumber) {
-      item.classList.toggle('active');
-    } else {
-      item.classList.remove('active');
-    }
-  });
-}

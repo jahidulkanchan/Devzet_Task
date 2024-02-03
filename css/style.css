@@ -20,6 +20,7 @@ ul {
   list-style: none;
 }
 button {
+  border: none;
   outline: none;
 }
 .link-btn a {
@@ -481,6 +482,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #ffffff;
 }
 footer h4 {
   color: #ffffff;
@@ -494,6 +496,26 @@ footer a,
 footer p {
   font-size: 18px;
   color: #7880aa;
+}
+footer .box {
+  width: fit-content;
+  padding: 5px 8px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+footer .logo a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 28px;
+}
+footer .box input {
+  width: 280px;
+  max-width: 320px;
+  outline: none;
+  border: none;
+}
+footer .box img {
+  width: 43px;
 }
 /* -------- end-------- */
 
