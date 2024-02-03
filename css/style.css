@@ -29,9 +29,11 @@ ul {
 /* ----------------------- */
 @media only screen and (max-width: 576px) {
   body .quality-section .item .number {
-    top: -45px;
-    left: 0px;
-}
+    top: -40px;
+    left: -1px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+  }
 }
 /* ----------------------- */
 header {
@@ -173,6 +175,15 @@ header {
 }
 .service-section .box img {
   width: 80px;
+  margin-bottom: 25px;
+}
+.service-section .box a {
+  color: #908e8e;
+}
+.service-section .box a .icon {
+  position: absolute;
+  font-size: 14px;
+  padding: 6px 0px 0px 5px;
 }
 /* -------- review-section end-------- */
 
