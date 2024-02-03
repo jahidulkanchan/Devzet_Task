@@ -1,3 +1,11 @@
+//nav toggle
+var navToggler = document.getElementById("nav-toggle");
+var mainMenu = document.getElementById("main-menu");
+navToggler.onclick = function () {
+  navToggler.classList.toggle("active");
+  mainMenu.classList.toggle("active");
+};
+
 //counterup dynamic if you want====
 
 // $('.counterup').counterUp({

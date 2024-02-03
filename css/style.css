@@ -57,67 +57,165 @@ button {
     font-size: 16px;
   }
 }
-
-/* ----------------------- */
+/* Media Query */
+@media (max-width: 992px) {
+  body header #nav-toggle {
+    visibility: visible;
+    display: inline-block;
+  }
+  body header .main-menu .menu {
+    top: 89px;
+    display: block;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    text-align: center;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+  }
+  body header .main-menu.active .menu {
+    padding: 0px 0px 30px 0px;
+    background-image: linear-gradient(black, #1B1E41);
+    height: 320px;
+    width: 100%;
+    visibility: visible;
+  }
+  body header .main-menu .menu li {
+    margin: 0 auto;
+    line-height: 60px;
+    width: 100px;
+  }
+  body header .main-menu .menu li a::before {
+    display: inline-block;
+  }
+  body header .main-menu .menu li:hover::before {
+    transform: scaleX(0);
+  }
+  body .speaker-section .speaker-text {
+    padding: 0px 0px 20px 0px;
+  }
+  body .course-section .tab-pane {
+    padding: 0px;
+    margin-left: 0px;
+  }
+}
+/* Header-part */
 header {
-  background-color: black;
+  position: absolute;
+  background-color: #ffffff00;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 90px;
+  text-transform: capitalize;
+  z-index: 99999;
+  transition: 0.3s ease;
 }
-.main-menu {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999999;
-  color: aliceblue;
-  padding: 20px 0px;
 }
-.main-menu .logo a {
-  font-size: 30px;
+header .container .logo h3 a {
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  line-height: 90px;
+  font-weight: bold;
 }
-.main-menu ul {
+header .main-menu .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 35px;
+  z-index: 99999999;
 }
-.main-menu a {
-  color: aliceblue;
+header .main-menu .menu li {
+  margin: 0px 15px;
 }
-.contact-btn a {
-  color: black;
+header .main-menu .menu li a {
+  position: relative;
+  color: #ffffff;
+  padding: 8px 5px 5px 5px;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
-.contact-btn {
-  background-color: #bcec00;
-  padding: 8px 30px;
-  border-radius: 30px;
+header #nav-toggle {
+  float: right;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  display: none;
+  color: #ff4000;
+  z-index: 2;
 }
-/* --------hero-section start-------- */
-.hero-section {
-  padding-top: 150px;
-  color: aliceblue;
-  min-height: 615px;
-  background-image: url(../images/Banner.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#nav-toggle span {
+  position: relative;
+  height: 3px;
+  width: 32px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: auto;
+  margin-left: 3px;
   z-index: -1;
 }
-.hero-section h1 {
-  font-size: 70px;
+#nav-toggle.active span {
+  background: transparent;
 }
-.hero-section .link-btn {
-  position: relative;
-}
-.hero-section .link-btn .icon {
+#nav-toggle span::before,
+#nav-toggle span::after {
+  content: "";
   position: absolute;
-  top: -34px;
   left: 0;
-  right: -300px;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  transition: 0.3s ease;
+  background-color: #ffffff;
+  transition: top 0.2s 0.2s ease, transform 0.2s ease;
+  -webkit-transition: top 0.2s 0.2s ease, transform 0.2s ease;
 }
-.hero-section small {
-  color: #908e8e;
-  font-size: 12px;
+#nav-toggle span::before {
+  top: -8px;
 }
-/* --------hero-section end-------- */
+#nav-toggle.active span::before {
+  top: 0px;
+  transition: top 0.2 s ease, transform 0.2s 0.2s ease;
+  -webkit-transition: top 0.2s ease, transform 0.2s 0.2s ease;
+  transform: rotate(45deg);
+  width: 100%;
+}
+#nav-toggle span::after {
+  top: 8px;
+}
+#nav-toggle.active span::after {
+  top: 0px;
+  transition: top 0.2s ease, transform 0.2s 0.2s ease;
+  -webkit-transition: top 0.2s ease, transform 0.2s 0.2s ease;
+  transform: rotate(-45deg);
+  width: 100%;
+}
+/* ----------------------- */
+/* ----------------------- */
+.banner-section {
+  text-align: center;
+  padding: 50px 0px;
+  min-height: 700px;
+  background-image: url(../images/Banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.banner-section h1 {
+  font-size: 70px;
+  margin-top: 100px;
+}
+/* ----------------------- */
 /* -------- about-section start-------- */
 .about-section {
   padding: 50px 0px;
