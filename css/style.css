@@ -32,6 +32,11 @@ ul {
   body .owl-carousel .owl-nav button.owl-next {
     display: none;
   }
+  body .content-section h1 {
+    margin-top: 50px;
+    font-size: 48px;
+    color: #ffffff;
+  }
 }
 @media only screen and (max-width: 600px) {
   body .quality-section .item .number {
@@ -39,6 +44,9 @@ ul {
     left: -1px;
     border-radius: 30px;
     border-bottom-left-radius: 0px;
+  }
+  body .review-section span {
+    font-size: 38px;
   }
 }
 
@@ -267,6 +275,15 @@ header {
   min-height: 400px;
   background-color: #f6f6f6;
 }
+.testimonial-section h6 {
+  color: #3c50e0;
+  font-weight: 600;
+}
+.testimonial-section h1 {
+  font-size: 44px;
+  color: #00005c;
+  font-weight: 700;
+}
 .testimonial-section .item {
   padding: 30px;
   margin: 50px 0px;
@@ -287,54 +304,88 @@ header {
 .owl-carousel .owl-nav button.owl-next {
   font-size: 40px;
 }
-.owl-carousel .owl-nav button.owl-prev {
-  position: absolute;
-  top: 145px;
-  left: -40px;
-  width: 60px;
-  height: 60px;
-  border-radius: 40px;
-  background-color: #705cf6;
-}
+.owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
   position: absolute;
   top: 145px;
-  right: -40px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: -30px;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: -30px;
+}
+.owl-carousel .owl-nav button.owl-next:hover::after,
+.owl-carousel .owl-nav button.owl-prev:hover::after {
+  background-color: #3c50e0;
+}
+.owl-carousel .owl-nav button.owl-prev::after,
+.owl-carousel .owl-nav button.owl-next::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
   border-radius: 40px;
-  background-color: #705cf6;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #b3bbdf;
+  transition: all 0.3s ease;
 }
 .owl-carousel .owl-nav button.owl-prev::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  content: "<";
-  top: 0px;
-  left: 0px;
-  width: 60px;
-  height: 60px;
-  border-radius: 40px;
-  background-color: #2200ff;
+  content: "\2190";
 }
 .owl-carousel .owl-nav button.owl-next::after {
-  position: absolute;
-  content: ">";
-  top: 0px;
-  left: 0px;
-  width: 60px;
-  height: 60px;
-  border-radius: 40px;
-  background-color: #2200ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  content: "\2192";
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #3a52c9;
 }
 /* -------- end-------- */
+
+/* --------content-section start-------- */
+.content-section {
+  text-align: center;
+  padding: 50px 0px;
+  min-height: 500px;
+  background-image: url(../images/content-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-section h1 {
+  margin-top: 100px;
+  font-size: 48px;
+  color: #ffffff;
+}
+.content-section p {
+  color: #908e8e;
+}
+/* -------- content-section end-------- */
+
 /* -------- start-------- */
-/* -------- end-------- */
-/* -------- start-------- */
+.platform-section {
+  padding: 50px;
+  min-height: 300px;
+}
+.platform-section p {
+  margin-top: 50px;
+  color: 9088eE;
+}
+.platform-section .icon {
+  margin: 10px 0px;
+}
+.platform-section .icon img {
+  max-width: 150px;
+}
 /* -------- end-------- */
 /* -------- start-------- */
 /* -------- end-------- */
