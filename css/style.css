@@ -89,6 +89,10 @@ button {
     line-height: 50px;
     width: 100px;
   }
+  body .dropmenu .fa-angle-down {
+    position: inherit;
+    margin: 6px 0px 0px 4px;
+  }
   body header .main-menu .menu li a::before {
     display: inline-block;
   }
@@ -147,7 +151,7 @@ header .main-menu .menu li a {
   border-bottom: 2px solid transparent;
 }
 header .main-menu .menu > li:hover > a,
-header .main-menu .menu > li:hover > span {
+header .main-menu .menu > li:hover span {
   color: #b9b9b9;
 }
 header #nav-toggle {
@@ -171,10 +175,16 @@ header .submenu {
   z-index: 99999;
 }
 header .submenu li {
+  position: relative;
   margin: 50px 0px;
 }
+
 header .submenu li:hover a {
   color: #b9b9b9;
+}
+.dropmenu .fa-angle-down {
+  position: absolute;
+  margin: 6px 0px 0px 4px;
 }
 header .main-menu li.dropmenu:hover .submenu {
   display: block;
