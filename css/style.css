@@ -43,6 +43,9 @@ button {
 }
 .link-btn a {
   display: inline-block;
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
   background-color: #bcec00;
   color: var(--black);
   font-weight: 700;
@@ -79,6 +82,7 @@ button {
     width: 100px;
   }
   body header #nav-toggle {
+    margin-top: -10px;
     visibility: visible;
     display: inline-block;
   }
@@ -86,29 +90,91 @@ button {
     position: inherit;
     margin: 6px 0px 0px 4px;
   }
+  /* -----banner-section Start------- */
+  body .banner-section h1 {
+    font-size: 50px;
+  }
+  body .banner-section p {
+    font-size: 18px;
+  }
+  /* -----banner-section End------- */
+  body .service-section h1 {
+    font-size: 40px;
+  }
 }
 @media (max-width: 768px) {
   body .owl-carousel .owl-nav button.owl-prev,
   body .owl-carousel .owl-nav button.owl-next {
     display: none;
   }
-}
-@media (max-width: 576px) {
+  /* --------about-section Start-------- */
+  body .about-section h1 {
+    font-size: 35px;
+  }
+  body .about-section p {
+    font-size: 16px;
+  }
+  /* --------about-section End------- */
+  body .review-section h1 {
+    font-size: 35px;
+  }
+  body .review-section p {
+    font-size: 16px;
+  }
+  body .review-section .counterup,
+  body .review-section span {
+    font-size: 40px;
+  }
+  /* ----------quality-section Start-------------- */
+  body .quality-section h1 {
+    font-size: 40px;
+  }
   body .quality-section .item .number {
     top: -40px;
     left: -1px;
     border-radius: 30px;
     border-bottom-left-radius: 0px;
   }
-  body .review-section span {
+  /* ------------quality-section End------------ */
+
+  /* ---------build-section Start--------- */
+  body .build-section h1 {
+    font-size: 40px;
+  }
+  /* --------build-section End--------- */
+  /* ------testimonial-section Start------ */
+  body .testimonial-section h1 {
+    font-size: 40px;
+  }
+  /* ------testimonial-section End------- */
+  /* ----------content-section Start--------- */
+  body .content-section h1 {
+    margin-top: 45px;
     font-size: 35px;
   }
+  /* ----------content-section End---------- */
+  /* -------------blog-section Start--------------- */
+  body .blog-section h1 {
+    font-size: 44px;
+  }
+  /* ------------- blog-section End--------------- */
+  /* ---------------------------- */
+  body .faq-section h1 {
+    font-size: 40px;
+  }
+  /* ---------------------------- */
+  /* ---------------------------- */
+
+  /* ---------------------------- */
+  /* ---------------------------- */
+
+  /* ---------------------------- */
   body footer a,
   body footer p {
     font-size: 16px;
   }
 }
-/* -------------Media Query Start------------ */
+/* -------------Media Query End------------ */
 /* ------------ */
 /* -----------Header-part Start--------- */
 header {
@@ -144,15 +210,17 @@ header .main-menu .menu {
 }
 header .main-menu .menu li {
   cursor: pointer;
-  margin: 0px 8px;
+  margin: 0px 12px;
   color: #ffffff;
 }
-header .main-menu .menu li a {
+header .main-menu .menu li a,
+header .main-menu .menu li span {
   position: relative;
+  font-size: 14px;
+  font-family: "Urbanist", sans-serif;
   padding: 8px 0px 5px 0px;
-  color: #ffffff;
+  color: var(--white);
   transition: all 0.2s ease;
-  border-bottom: 2px solid transparent;
 }
 header .main-menu .menu > li:hover > a,
 header .main-menu .menu > li:hover span {
@@ -256,6 +324,10 @@ header .main-menu li.dropmenu:hover .submenu {
   font-size: 70px;
   margin-top: 100px;
 }
+.banner-section p {
+  font-size: 20px;
+  color: #c6c6c6;
+}
 .banner-section .link-btn {
   position: relative;
 }
@@ -272,7 +344,7 @@ header .main-menu li.dropmenu:hover .submenu {
 /* -------- about-section start-------- */
 .about-section {
   padding: 50px 0px;
-  min-height: 400px;
+  min-height: 600px;
 }
 .about-section h4 {
   font-size: 18px;
@@ -291,8 +363,12 @@ header .main-menu li.dropmenu:hover .submenu {
 /* -------- review-section start-------- */
 .review-section {
   padding: 80px 0px 50px 0px;
-  min-height: 400px;
+  min-height: 500px;
   background-color: #f9f9fb;
+}
+.review-section h1 {
+  font-size: 48px;
+  color: var(--darkBlue);
 }
 .review-section .image {
   position: relative;
@@ -435,13 +511,12 @@ header .main-menu li.dropmenu:hover .submenu {
   background-color: #f6f6f6;
 }
 .testimonial-section h6 {
+  font-size: 16px;
   color: #3c50e0;
-  font-weight: 600;
 }
 .testimonial-section h1 {
   font-size: 44px;
   color: #00005c;
-  font-weight: 700;
 }
 .testimonial-section .item {
   padding: 30px;
@@ -450,6 +525,12 @@ header .main-menu li.dropmenu:hover .submenu {
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 2px 4px 25px #dcdcdc;
+}
+.testimonial-section .item h3 {
+  font-size: 24px;
+}
+.testimonial-section small {
+  font-size: 14px;
 }
 .testimonial-section .item p {
   font-style: italic;
@@ -521,7 +602,7 @@ header .main-menu li.dropmenu:hover .submenu {
   background-repeat: no-repeat;
 }
 .content-section h1 {
-  margin-top: 140px;
+  margin-top: 100px;
   font-size: 48px;
   color: #ffffff;
 }
@@ -548,7 +629,6 @@ header .main-menu li.dropmenu:hover .submenu {
   color: #b9b9b9;
 }
 .blog-section .blog-item p {
-  font-weight: 600;
   font-size: 20px;
   margin-top: 8px;
   color: #000000;
@@ -559,7 +639,6 @@ header .main-menu li.dropmenu:hover .submenu {
 }
 .blog-section .profile span {
   font-size: 14px;
-  font-weight: 600;
   color: #000000;
 }
 /* -------- blog-section end-------- */
@@ -572,7 +651,7 @@ header .main-menu li.dropmenu:hover .submenu {
   min-height: 500px;
 }
 .faq-section h1 {
-  font-weight: 700;
+  font-size: 48px;
   color: #00005c;
 }
 .accordion-item {
@@ -682,5 +761,3 @@ footer .social-menu li a {
   color: var(--white);
 }
 /* -------- Footer end-------- */
-
-
