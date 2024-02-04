@@ -13,6 +13,17 @@ body {
   --white: #ffffff;
   --black: #000000;
 }
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.veitpro {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+/* -------GOOGLE FONT ----------- */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Inter:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,600&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Work+Sans:wght@400;500;700&display=swap");
 
 img {
   width: 100%;
@@ -50,13 +61,13 @@ button {
     position: absolute;
     overflow: hidden;
     left: 0;
-    background-image: linear-gradient(black, #1b1e41);
+    background-image: linear-gradient(#0b121f, #1b1e41);
     text-align: center;
     transition: 0.3s ease;
   }
   body header .main-menu.active .menu {
     padding: 30px 0px 30px 0px;
-    background-image: linear-gradient(black, #1b1e41);
+    background-image: linear-gradient(#0b121f, #1b1e41);
     height: 600px;
     width: 100%;
     box-shadow: 1px 8px 15px #28282885;
@@ -81,11 +92,8 @@ button {
   body .owl-carousel .owl-nav button.owl-next {
     display: none;
   }
-  body .content-section h1 {
-    margin-top: 30px;
-  }
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 576px) {
   body .quality-section .item .number {
     top: -40px;
     left: -1px;
@@ -93,7 +101,7 @@ button {
     border-bottom-left-radius: 0px;
   }
   body .review-section span {
-    font-size: 38px;
+    font-size: 35px;
   }
   body footer a,
   body footer p {
@@ -114,15 +122,16 @@ header {
   text-transform: capitalize;
   z-index: 99999;
   transition: 0.3s ease;
+  background-color: #0b121f6d;
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .logo h3 a {
+header .container .logo a {
   color: #ffffff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
   text-transform: capitalize;
   line-height: 90px;
   font-weight: bold;
@@ -163,7 +172,7 @@ header .submenu {
   text-align: center;
   padding: 10px 0px;
   position: absolute;
-  background-image: linear-gradient(black, #1b1e41);
+  background-image: linear-gradient(#0b121f, #1b1e41);
   display: none;
   visibility: hidden;
   width: 120px;
@@ -232,11 +241,11 @@ header .main-menu li.dropmenu:hover .submenu {
   width: 100%;
 }
 /* ------------Header-part End----------- */
-/* ----------------------- */
+/* ----------banner-section Start ------------- */
 .banner-section {
   text-align: center;
-  padding: 50px 0px;
-  min-height: 700px;
+  padding: 50px 0px 80px 0px;
+  min-height: 600px;
   background-image: url(../images/Banner.png);
   background-size: cover;
   background-position: center;
@@ -246,6 +255,18 @@ header .main-menu li.dropmenu:hover .submenu {
 .banner-section h1 {
   font-size: 70px;
   margin-top: 100px;
+}
+.banner-section .link-btn {
+  position: relative;
+}
+.banner-section small {
+  font-size: 12px;
+  color: #908e8e;
+}
+.banner-section .link-btn .icon img {
+  position: absolute;
+  top: -30px;
+  width: 80px;
 }
 /* ----------------------- */
 /* -------- about-section start-------- */
@@ -543,9 +564,8 @@ header .main-menu li.dropmenu:hover .submenu {
 }
 /* -------- blog-section end-------- */
 
-/* -------- start-------- */
+/* --------faq-section start-------- */
 
-/*  .accordion-progress  */
 .faq-section {
   padding: 50px 0px 0px 0px;
   background-color: #f6f6f6;
@@ -586,7 +606,7 @@ header .main-menu li.dropmenu:hover .submenu {
 .accordion-button:not(.collapsed)::after {
   opacity: 1 !important;
 }
-/* -------- end-------- */
+/* --------faq-section end-------- */
 /* -------- platform-section start-------- */
 .platform-section {
   padding: 50px;
@@ -604,7 +624,7 @@ header .main-menu li.dropmenu:hover .submenu {
 }
 /* -------- platform-section end-------- */
 
-/* -------- start-------- */
+/* -------- Footer start-------- */
 footer {
   padding: 50px 0px;
   min-height: 400px;
@@ -646,19 +666,21 @@ footer .box input {
 footer .box img {
   width: 43px;
 }
-/* -------- end-------- */
+footer .social-menu {
+  margin-top: 120px;
+}
+footer .social-menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #293965;
+  border: 3px solid #324066;
+  font-size: 15px;
+  color: var(--white);
+}
+/* -------- Footer end-------- */
 
-/* -------- start-------- */
-/* -------- end-------- */
 
-/* -------- start-------- */
-/* -------- end-------- */
-
-/* -------- start-------- */
-/* -------- end-------- */
-
-/* -------- start-------- */
-/* -------- end-------- */
-
-/* -------- start-------- */
-/* -------- end-------- */
