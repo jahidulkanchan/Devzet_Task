@@ -7,11 +7,18 @@ body {
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ---------- TYPHOGRAPHY START ------------- */
+:root {
+  --darkBlue: #00005c;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 img {
   width: 100%;
 }
 a {
-  color: black;
+  color: var(--black);
   text-decoration: none;
 }
 ul {
@@ -26,19 +33,15 @@ button {
 .link-btn a {
   display: inline-block;
   background-color: #bcec00;
-  color: #000000;
+  color: var(--black);
   font-weight: 700;
   padding: 12px 30px;
   border-radius: 30px;
 }
-/* ----------------------- */
+/* ----------- TYPHOGRAPHY END ------------ */
 
 /* -------------Media Query Start------------ */
 @media (max-width: 992px) {
-  body header #nav-toggle {
-    visibility: visible;
-    display: inline-block;
-  }
   body header .main-menu .menu {
     top: 89px;
     display: block;
@@ -64,20 +67,22 @@ button {
     line-height: 50px;
     width: 100px;
   }
+  body header #nav-toggle {
+    visibility: visible;
+    display: inline-block;
+  }
   body .dropmenu .fa-angle-down {
     position: inherit;
     margin: 6px 0px 0px 4px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body .owl-carousel .owl-nav button.owl-prev,
   body .owl-carousel .owl-nav button.owl-next {
     display: none;
   }
   body .content-section h1 {
     margin-top: 30px;
-    font-size: 48px;
-    color: #ffffff;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -100,7 +105,7 @@ button {
 /* -----------Header-part Start--------- */
 header {
   position: absolute;
-  background-color: #ffffff00;
+  background-color: transparent;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -130,7 +135,7 @@ header .main-menu .menu {
 }
 header .main-menu .menu li {
   cursor: pointer;
-  margin: 0px 7px;
+  margin: 0px 8px;
   color: #ffffff;
 }
 header .main-menu .menu li a {
@@ -338,7 +343,7 @@ header .main-menu li.dropmenu:hover .submenu {
 /* -------- start-------- */
 .quality-section {
   padding: 50px 0px;
-  min-height: 500px;
+  min-height: 570px;
   background-image: url(../images/handp.png);
   background-position: top center;
   background-size: cover;
@@ -495,7 +500,7 @@ header .main-menu li.dropmenu:hover .submenu {
   background-repeat: no-repeat;
 }
 .content-section h1 {
-  margin-top: 100px;
+  margin-top: 140px;
   font-size: 48px;
   color: #ffffff;
 }

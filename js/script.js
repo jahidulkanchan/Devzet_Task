@@ -6,7 +6,7 @@ navToggler.addEventListener("click", ()=>{
   mainMenu.classList.toggle("active");
 })
 
-// Slider Number1
+// Owl Carousel Slider
 $(".slider1").owlCarousel({
   loop: true,
   margin: 30,
