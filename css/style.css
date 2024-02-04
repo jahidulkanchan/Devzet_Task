@@ -135,12 +135,14 @@ header .main-menu .menu {
   z-index: 99999999;
 }
 header .main-menu .menu li {
-  margin: 0px 5px;
+  cursor: pointer;
+  margin: 0px 7px;
+  color: #ffffff;
 }
 header .main-menu .menu li a {
   position: relative;
   color: #ffffff;
-  padding: 8px 5px 5px 5px;
+  padding: 8px 0px 5px 0px;
   color: #ffffff;
   transition: all 0.2s ease;
   border-bottom: 2px solid transparent;
@@ -154,6 +156,26 @@ header #nav-toggle {
   display: none;
   color: #ff4000;
   z-index: 2;
+}
+.submenu {
+  text-align: center;
+  padding: 10px 0px;
+  position: absolute;
+  background-color: #1b1d41;
+  display: none;
+  visibility: hidden;
+  width: 90px;
+  z-index: 3;
+}
+.submenu li {
+  margin: 50px 0px;
+}
+.submenu li a {
+  transition: none;
+}
+header .main-menu .menu li.dropmenu:hover .submenu {
+  display: block;
+  visibility: visible;
 }
 #nav-toggle span {
   position: relative;
