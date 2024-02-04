@@ -692,7 +692,7 @@ header .main-menu li.dropmenu:hover .submenu {
   min-height: 350px;
 }
 .platform-section p {
-  margin-top: 50px;
+  margin-top: 20px;
   color: 9088eE;
 }
 .platform-section .icon {
@@ -714,7 +714,7 @@ footer {
   color: #ffffff;
 }
 footer h4 {
-  color: #ffffff;
+  color: var(--white);
   margin: 20px 0px;
   font-size: 24px;
 }
@@ -723,6 +723,7 @@ footer li {
 }
 footer a,
 footer p {
+  font-family: "Urbanist", sans-serif;
   font-size: 18px;
   color: #7880aa;
 }
@@ -733,8 +734,8 @@ footer .box {
   background-color: #ffffff;
 }
 footer .logo a {
-  display: inline-block;
   color: #ffffff;
+  display: inline-block;
   font-size: 28px;
 }
 footer .box input {
@@ -759,5 +760,9 @@ footer .social-menu li a {
   border: 3px solid #324066;
   font-size: 15px;
   color: var(--white);
+  transition: all 0.2s ease;
+}
+footer .social-menu li:hover a {
+  background-color: #1a2d61;
 }
 /* -------- Footer end-------- */
