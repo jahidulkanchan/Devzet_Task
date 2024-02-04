@@ -1,17 +1,10 @@
-//nav toggle
+//toggle-MenuButton
 var navToggler = document.getElementById("nav-toggle");
 var mainMenu = document.getElementById("main-menu");
-navToggler.onclick = function () {
+navToggler.addEventListener("click", ()=>{
   navToggler.classList.toggle("active");
   mainMenu.classList.toggle("active");
-};
-
-//counterup dynamic if you want====
-
-// $('.counterup').counterUp({
-//   delay: 10,
-//   time: 1000
-// });
+})
 
 // Slider Number1
 $(".slider1").owlCarousel({
@@ -34,3 +27,10 @@ $(".slider1").owlCarousel({
     },
   },
 });
+
+
+//counterup dynamic if you want====
+// $('.counterup').counterUp({
+//   delay: 10,
+//   time: 1000
+// });
