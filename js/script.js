@@ -6,6 +6,9 @@ navToggler.addEventListener("click", ()=>{
   mainMenu.classList.toggle("active");
 })
 
+// Initialize wow.js
+new WOW().init();
+
 // Owl Carousel Slider
 $(".slider1").owlCarousel({
   loop: true,
